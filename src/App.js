@@ -1,29 +1,19 @@
 import './App.css';
+import { useState } from "react";
 
 function App() {
-  const users = [
-    {name: "Pedro", age: 21},
-    {name: "Mariana", age: 24},
-    {name: "Hugo", age: 27},
-  ];
+  const [showText, setShowText] = useState(true);
 
+  const toggleText = () => {
+    setShowText(!showText)
+  }
+  
   return (
     <div className="App">
-      {users.map((user, key) => {
-        return (
-          <User />
-        )
-      })}
+      <button onClick={toggleText}>Show/Hide</button>
+      {showText === true && <h1>Hi, my name is Mariana</h1>}
     </div>
   );
-}
-
-const User = (props) => {
-  return (
-    <div>
-      {props.name} {props.age}
-    </div>
-  )
 }
 
 export default App;
