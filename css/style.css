@@ -1,0 +1,48 @@
+*{
+    scroll-behavior: smooth;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: #2C3F49;
+}
+
+header{
+    height: 80px;
+    border-bottom: 5px solid #E9F2F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    font-family: 'Bungee', cursive;
+    font-size: 28px;
+    color: #FFCC17;
+}
+
+.content{
+    padding-top: 80px;
+}
+
+.hero{
+    font-family: 'Oxanium', cursive;
+    text-align: center;
+}
+
+.hero__img{
+    width: 70%;
+}
+.hero__title{
+    color: #FFCC17;
+}
+.hero__description{
+    color: #E9F2F9;
+}
